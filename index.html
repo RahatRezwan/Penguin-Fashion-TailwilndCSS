@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Penguine Fashion</title>
+
+        <!-- TailwindCSS -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    container: {
+                        padding: {
+                            DEFAULT: "1rem",
+                            sm: "1.5rem",
+                            md: "3rem",
+                            lg: "4rem",
+                            "2xl": "6rem",
+                        },
+                    },
+                    extend: {
+                        colors: {
+                            clifford: "#da373d",
+                            penguine: "#FFFBF0",
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+    <body>
+        <header class="bg-penguine">
+            <section class="container mx-auto sm:flex items-center justify-around py-14">
+                <div class="space-y-4 text-center sm:w-1/2 sm:text-left px-3 sm:px-0 pt-8 sm:pt-0">
+                    <h1 class="text-4xl sm:text-5xl uppercase font-bold">
+                        <span class="text-amber-400">Be The Penguine</span>
+                        <br />
+                        <span>of winter</span>
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, deleniti.</p>
+                    <button
+                        class="uppercase bg-[#85A019] py-3 px-5 text-sm sm:text-xl sm:py-4 sm:px-7 text-white font-semibold rounded-xl"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5 sm:h-6 sm:w-6 inline"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                        >
+                            <path
+                                d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"
+                            />
+                        </svg>
+                        Buy Now
+                    </button>
+                </div>
+                <div class="pt-8 sm:pt-0 sm:w-1/2">
+                    <img class="w-screen sm:w-full text-center" src="images/banner.png" alt="" />
+                </div>
+            </section>
+        </header>
+        <main></main>
+    </body>
+</html>
